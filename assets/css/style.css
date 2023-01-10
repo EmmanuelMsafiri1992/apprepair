@@ -1,0 +1,128 @@
+/* Required height of parents of the Half Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 740px) {
+  .full-page-intro {
+    height: 1000px;
+  }
+}
+
+
+/* Half Page Carousel itself*/
+.carousel {
+  height: 50%;
+}
+
+.carousel .carousel-inner {
+  height: 100%;
+}
+
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+  height: 100%;
+}
+
+/* Adjustment for mobile devices*/
+@media (max-width: 776px) {
+  .carousel {
+    height: 100%;
+  }
+}
+
+/* Navbar animation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.top-nav-collapse {
+  background-color: #1C2331;
+}
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331;
+  }
+}
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1C2331;
+}
+
+ul.a {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-section .contact {
+  -webkit-border-radius: 0 .25rem .25rem 0;
+  border-radius: 0 .25rem .25rem 0;
+  background-color: #103f6d;
+}
+
+.logo {
+  width: 110px;
+}
+
+
+/* ROUND BUTTON CALL NOW*/
+@media only screen and (min-width: 650px) {
+  .call-now {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .call-now {
+    display: block;
+    position: fixed;
+    text-decoration: none;
+    z-index: 9999;
+    width: 65px;
+    height: 65px;
+    border-radius: 80px;
+    border: 2px solid #fff;
+    bottom: 45px;
+    right: 9px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…UtMTMuNjc0QzYuMTE3IDI0LjMgNy4xIDEzIDcuMSAxMyIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==) center/50px 50px no-repeat #009900;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* ROUND BUTTON BOOK NOW*/
+
+@media only screen and (min-width: 650px) {
+  .book-now {
+    display: none;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .book-now {
+    display: block;
+    position: fixed;
+    text-decoration: none;
+    z-index: 9999;
+    width: 65px;
+    height: 65px;
+    border-radius: 80px;
+    border: 2px solid #fff;
+    bottom: 45px;
+    right: 9px;
+    color:cornsilk;
+    background-color: #1E93CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
